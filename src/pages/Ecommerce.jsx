@@ -86,16 +86,24 @@ const Ecommerce = () => {
                 </p>
                 <p className='text-gray-500 mt-1'>Budget</p>
               </div>
-            </div>
-          </div>
 
-          <div className='mt-10 flex gap-10 flex-wrap justify-center'>
-            <div className='border-r-1 border-color m-4 pr-10'>
-              <div>
+              <div className='mt-8'>
                 <p>
                   <span className='text-3xl font-semibold'>$48,438</span>
                 </p>
                 <p className='text-gray-500 mt-1'>Expense</p>
+              </div>
+
+              <div className='mt-5'>
+                <SparkLine
+                  currentColor='teal'
+                  id='line-sparkline'
+                  type='Line'
+                  height='80px'
+                  width='250px'
+                  data={SparklineAreaData}
+                  color='teal'
+                />
               </div>
             </div>
           </div>
